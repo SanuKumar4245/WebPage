@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="/order.html">
+        <h2>Place Your Order : </h2>
+        <br><br>
+    
+        <!--PERSONAL INFORMATION -->
+        <div class="order"> Personal Information
+          <br>
+          <label> First Name:</label> <input type="text" name="fname" size=25 />&nbsp;&nbsp;
+          <label>Last Name:</label> <input type="text" name="lname" size=25 />&nbsp;&nbsp;
+          <label>Mobile #:</label> <input type="text" name="mobile" size=25 />&nbsp;&nbsp;
+          <label>Address: <textarea col=70 rows=1 name="address"></textarea></label>
+          <br><br>
+        </div>
+    
+        <div class="order">
+          <!--ORDER DETAILS -->
+          Order Details
+          <br>
+          <select name="size">
+            <option>Select Pizza Size</option>
+            <option value="1">Small</option>
+            <option value="2">Medium</option>
+            <option value="3">Large</option>
+            <option value="4">Family</option>
+          </select>&nbsp;&nbsp;&nbsp;
+          <select name="Quantity">
+            <option>Select Quantity</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>&nbsp;&nbsp;&nbsp;
+          <label>Delivery Date:</label><input type="date" name="date" />&nbsp;&nbsp;&nbsp;
+          <label>Delivery Time:</label><input type="time" name="time" />&nbsp;&nbsp;&nbsp;
+          <select name="payment">
+            <option>Select Payment Option</option>
+            <option value="1">Easy Paisa</option>
+            <option value="2">Mobicash</option>
+            <option value="3">Bank Transfer</option>
+            <option value="4">Cash on Delivery</option>
+          </select>
+    
+          <br><br>
+        </div>
+    
+    
+        <!--CHEESES -->
+        <div class="order">
+          CHEESES
+          <br>
+          <input type="radio" name="cheese" value="1" />Mozzarella&nbsp;&nbsp;
+          <input type="radio" name="cheese" value="2" />Reduced Fat&nbsp;&nbsp;
+          <input type="radio" name="cheese" value="3" />Feta&nbsp;&nbsp;
+          <input type="radio" name="cheese" value="4" />provolone&nbsp;&nbsp;
+          <input type="radio" name="cheese" value="5" />cheddar&nbsp;&nbsp;
+          <input type="radio" name="cheese" value="6" />Parmesan
+    
+          <br><br>
+        </div>
+        <div class="order">
+          <!--SAUCES -->
+          SAUCES
+          <br>
+          <input type="radio" name="sauce" value="1" />Pizza Sauce&nbsp;&nbsp;
+          <input type="radio" name="sauce" value="2" />BBQ Sauce&nbsp;&nbsp;
+          <input type="radio" name="sauce" value="3" />Garlic Sauce&nbsp;&nbsp;
+          <input type="radio" name="sauce" value="4" />Pesto&nbsp;&nbsp;
+          <input type="radio" name="sauce" value="5" />Garlic Ranch Sauce&nbsp;&nbsp;
+          <input type="radio" name="sauce" value="6" />Creamy Bechamel sauce&nbsp;&nbsp;
+          <input type="radio" name="sauce" value="7" />Hummus&nbsp;&nbsp;
+          <input type="radio" name="sauce" value="8" />Buffalo Sauce&nbsp;&nbsp;
+    
+          <br><br>
+        </div>
+        <div class="order">
+          <!--COLD DRINKS -->
+    
+          Cold Drink
+          <br>
+          <input type="radio" name="drink" value="1" />Coke&nbsp;&nbsp;
+          <input type="radio" name="drink" value="2" />Pepsi&nbsp;&nbsp;
+          <input type="radio" name="drink" value="3" />7UP&nbsp;&nbsp;
+          <input type="radio" name="drink" value="4" />DEW&nbsp;&nbsp;
+          <input type="radio" name="drink" value="5" />Fanta&nbsp;&nbsp;
+          <input type="radio" name="drink" value="6" />Mirinda&nbsp;&nbsp;
+          <input type="radio" name="drink" value="7" />Sprite
+          <br><br>
+        </div>
+        <div class="order">
+          <!--TOPINGS -->
+    
+    
+          Choose Toppings - Rs.100 Each
+          <br>
+    
+          <input type="checkbox" name="topping" value="1" /> Anchovies&nbsp;&nbsp;
+          <input type="checkbox" name="topping" value="2" /> Chicken&nbsp;&nbsp;
+          <input type="checkbox" name="topping" value="4" /> Pepperoni&nbsp;&nbsp;
+          <input type="checkbox" name="topping" value="5" /> Salami&nbsp;&nbsp;
+          <input type="checkbox" name="topping" value="6" /> Sausage&nbsp;&nbsp;
+          <input type="checkbox" name="topping" value="7" /> Broccoli&nbsp;&nbsp;
+          <input type="checkbox" name="topping" value="8" /> Green Olives&nbsp;&nbsp;
+          <input type="checkbox" name="topping" value="9" /> Green Peppers&nbsp;&nbsp;
+          <input type="checkbox" name="topping" value="10" /> Mushrooms&nbsp;&nbsp;
+          <input type="checkbox" name="topping" value="11" /> Red Onions
+    
+    
+          <br><br>
+        </div>
+        <div class="order">
+          <!--SPECIAL INSTRUCTIONS -->
+    
+    
+          Special
+          instructions&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Delivery
+          Address
+          <br>
+          <textarea name="instructions" rows="4" cols="42"></textarea>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <textarea name="instructions" rows="4" cols="42"></textarea>
+    
+        </div>
+        <div><br>
+          <input type="submit" value="PLACE YOUR ORDER" />
+          <input type="reset" value="START OVER" />
+        </div>
+    
+    
+        </div>
+        <br>
+      </form>
+</body>
+</html>

@@ -16,6 +16,13 @@
   top: 0;
   z-index: 100;
   line-height: 20px;
+  
+}
+p{
+  font-family: 'Raleway',sans-serif;
+}
+h3{
+  font-family: 'Merienda', cursive;
 }
 .inner-width{
   max-width: 1300px;
@@ -28,7 +35,7 @@
 .logo{
   font-size: 40px;
   font-weight: 100;
-  font-family: 'Great Vibes',sans-serif;
+  font-family: 'Staatliches', cursive;
   color: #ffffff;
   cursor: pointer;
 }
@@ -53,7 +60,76 @@
 .navbar-menu a:hover::after{
   width: 100%;
 }
+.main{
+  display: flex;
+  width:100%;
+  height: 650px;
+}
 
+#hungry{
+  color: white;
+  margin-top: 40px;
+  padding: 170px;
+}
+#main_order{
+  margin-top: 60px;
+  font-size: 30px;
+  border: 2px solid white;
+  margin-right: 200px;
+  align-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  border-radius: 100px;
+}
+#main_order:hover{
+  color: black;
+  background-color: white;
+  cursor: pointer;
+  animation-name:  order;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes order {
+  0% {
+    box-shadow: 20px -20px 100px red;
+}
+50% {
+  box-shadow: -20px 20px 100px red;
+}
+100% {
+  box-shadow: 20px -20px 100px red;
+}
+  
+}
+#main_img{
+  margin-top: 50px;
+}
+#main_img{
+  background-image: url(./shourav-sheikh-Q9VEWorDhaY-unsplash.jpg);
+  background-size: 750px 550px;
+  background-repeat: no-repeat;
+  width: 60%;
+}
+#offer{
+  margin-top: 30px;
+  display: flex;
+  width: 100%;
+  height: 500px;
+}
+#offer1{
+  background-image: url(./one-plus-one.1c04b9aa28fe0588592757ffc9111ae6.1.jpg);
+  margin-left: 30px;
+  /* border: 2px solid white; */
+  width: 50%;
+}
+#offer2{
+  margin-left: 50px;
+  /* border: 2px solid white; */
+  width: 50%;
+  background-image: url(./momo-mia-meal-for-1.9b26ce043967fa447ef98d6579536f20.1.jpg);
+  margin-right: 30px;
+}
 body{
   display: flex;
   justify-content: flex-end;
@@ -82,6 +158,9 @@ footer .container .sec{
 }
 footer .container .sec.aboutus{
   width: 40%;
+}
+.rev_des{
+  font-family: 'Raleway',sans-serif;
 }
 footer .container h2{
   position: relative;
@@ -172,13 +251,7 @@ footer p{
   text-align: center;
   color: #999;
 }
-#price{
-  display: flex;
-  width: 100%;
-  text-align: center;
-  grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
-  grid-gap: 12px;
-}
+
 .pic{
   background-repeat: no-repeat;
   height: 300px;
@@ -253,14 +326,20 @@ form{
 #a1{
   display: flex;
   flex-direction: row;
-  background-color: #1f1d1d4f;
   margin-top: 20px;
   justify-content: center;
 }
-
+#non_veg{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  justify-content: center;
+}
 #a2{
+  margin-top: 40px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
+  font-size: 40px;
 }
 
 html{
@@ -268,78 +347,151 @@ html{
 }
 
 .a3{
-  width: 40%;
-  text-align: center;
-  margin: 45px 45px 15px 15px;
-  padding: 4px;
-  height: 200px;
+  width: 300px;
+  margin-left: 30px;
+  height: 500px;
+  /* border-style: solid; */
+  /* border-color: white;
+  border-bottom: none; */
+}
+#side1, #side2{
+  /* border: 2px solid white; */
+  width: 4%;
+  border-bottom-left-radius: 100px;
+  border-top-right-radius: 100px;
   color: white;
-  border-style: solid;
-  border-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  writing-mode:vertical-lr;
+  margin-left: 30px;
+  font-size: 30px;
+}
+#side1{
+  background-color: #0a8020;
+  border-right: 5px solid rgb(5, 83, 9);
+}
+#side2{
+  background-color: rgb(134, 20, 45);
+  border-right: 5px solid rgb(102, 10, 30);
+}
+.veg_pic{
+  /* border: 2px solid white; */
+  height: 260px;
+  border-bottom: 20px solid white;
+}
+#veg_1{
+  background-image: url(./veg_1.jpg);
+}
+#veg_2{
+background-image: url(./Veg_2.jpg);
+}
+#veg_3{
+background-image: url(./veg_3.jpg);
+}
+#veg_4{
+background-image: url(./veg_4.jpg);
+}
+#nveg_1{
+  background-image: url(./nveg_1.jpg);
+}
+#nveg_2{
+  background-image: url(./nveg_2.jpg);
+}
+#nveg_3{
+  background-image: url(./nveg_3.jpg);
+}
+#nveg_4{
+  background-image: url(./nveg_4.jpg);
+}
+#nveg_1, #nveg_2, #nveg_3, #nveg_4, #veg_1, #veg_2, #veg_3, #veg_4{
+  background-repeat: no-repeat;
+  background-size: 360px;
+}
+.veg_des{
+  border: 2px solid white;
+  height: 180px;
+  background-color: white;
+  /* border: 2px solid black; */
+  padding-top: 20px;
+  font-family: open sans-serif;
+  border-bottom-right-radius: 70px;
 }
 
+.veg_price{
+  /* border: 2px solid white; */
+  height: 50px;
+  border-radius: 10px;
+  margin-top: 15px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0a8020;
+  cursor: pointer;
+}
+.veg_price:hover{
+  background-color: #0357d6;
+}
+.add{
+padding-left: 120px;
+color: white;
+font-size: 20px;
+}
 
-
-
+.rs{
+padding-left: 60px;
+color: white;
+font-size: 20px;
+}
 
 #reviewbar{
-  background-color: #1f1d1d4f;
-  margin-top: 100px;
+  background-color: rgba(7, 6, 6, 0.904);
+  margin-top: 40px;
   height: 300px;
-  display: inline-block;
+  display: flex;
   width: 100%;
+  align-items: center;
+  justify-items: center;
 }
 
-.name{
-  font-family: 'Elsie Swash Caps', cursive;
-  font-weight:900;
-  color:rgb(255, 255, 255);
-
-}
-
-.says{
-  font-family: 'Petit Formal Script', cursive;
-  font-weight: bolder;
-}
-
-#rev{
-  display: block;
-  margin: auto;
-  width: 100px;
-  color: white;
-  font-size: 30px;
-
-}
 
 .review{
-  
- 
-  background-color: #1f1d1d4f;
-  text-align: center;
-  margin: 20px;
-  margin-top: 30px;
-  height: 200px;
-  border-style: solid;
-  display: inline-block;
-  width: 21%;
+  background-color: rgb(186 12 12 / 56%);
+  height: 240px;
+  width: 23%;
   margin-left: 20px;
   color: white;
+  border-top-left-radius: 50px;
+}
+.rev_des{
+/* border: 2px solid rgb(224, 25, 25); */
+height: 180px;
+width: 350px;
+display: flex;
+justify-items: center;
+align-items: center;
+padding-left: 10px;
+text-align: center;
 }
 
-.review:hover{
-  background-color: black;
-  
+.customer{
+  /* border: 2px solid rgb(23, 27, 218); */
+  height: 60px;
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 130px;
+  font-size: 20px;
+  font-family: 'Raleway',sans-serif;
+  font-weight: bold;
+  border-bottom: 10px solid white;
+}
+.customer > img{
+  padding-left: 80px;
 }
 
-#r1{
-  position: relative;
-}
-
-
-
-#r2{
-  position: relative;
-}
 .order{
   border: 2px solid white;
   padding: 20px 20px;
